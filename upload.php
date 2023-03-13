@@ -5,7 +5,7 @@ if(isset($_FILES['file']) && $_FILES['file']['error'] == 0){
     $file_tmp = $_FILES['file']['tmp_name'];
     $file_type = $_FILES['file']['type'];
     $file_ext = strtolower(end(explode('.',$_FILES['file']['name'])));
-    $extensions = array("jpeg","jpg","png","pdf");
+    $extensions = array("jpeg","JPG","png","pdf");
     
     if(in_array($file_ext,$extensions)=== false){
         echo "Nur JPEG, JPG, PNG & PDF-Dateien sind erlaubt.";
