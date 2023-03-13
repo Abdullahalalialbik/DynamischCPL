@@ -16,12 +16,13 @@
       </nav>
     </header>
     <main>
-      <h1>Labor</h1>
-      <form method="post" enctype="multipart/form-data">
-        <label for="file-upload">Datei auswählen:</label>
-        <input type="file" name="file" id="file-upload">
-        <button type="submit">Hochladen</button>
-      </form>
+   <h1>Labor</h1>
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit" name="submit">Hochladen</button>
+    </form>
     </main>
   </body>
 </html>
+
